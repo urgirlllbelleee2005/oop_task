@@ -1,11 +1,11 @@
-import 'bank_account.dart';
-
+// lib/main.dart
+import 'vehicle.dart';
 
 void main() {
-  print('--- Base BankAccount Demo ---');
-  var base = BankAccount(owner: 'Alice', accountNumber: 1001, startingBalance: 100);
-  print(base.info());
-  base.deposit(50);
-  base.withdraw(200);
-  print('Balance (getter): \$${base.balance.toStringAsFixed(2)}');
+  print('--- Vehicle Demo ---');
+
+  var v = Vehicle(brand: 'Generic', year: 2000, startingSpeed: 10);
+  print(v.info());
+  v.accelerate(20);
+  v.brake(5);
 }
